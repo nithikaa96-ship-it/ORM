@@ -17,8 +17,8 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 cars
 
 # PROGRAM
-'''
-admin.py 
+```
+ # admin.py 
 from django.contrib import admin
 from .models import Employee
 
@@ -26,8 +26,9 @@ class EmployeeAdmin(admin.ModelAdmin):
     list_display = ('eid', 'name', 'salary', 'age', 'email')
 
 admin.site.register(Employee, EmployeeAdmin)
-
-models.py
+```
+```
+ # models.py
 from django.db import models
 from django.contrib import admin
 
@@ -41,7 +42,7 @@ class Employee(models.Model):
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ('eid', 'name', 'salary', 'age', 'email')
-'''
+```
 # OUTPUT
 ![alt text](<Screenshot 2026-11-24 202552.png>)
 
